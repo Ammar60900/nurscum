@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#100d20">
+    <meta name="description" content="Romantik bir sonu olan gizli bir görev.">
+    <title>Operation: Steal Her Heart ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div id="particles" aria-hidden="true"></div>
+
+    <header class="topbar">
+        <a class="brand" href="#" aria-label="Ana Sayfa">
+            <span class="brand-icon">♥</span>
+            <span>LOVE<span class="accent">OS</span></span>
+        </a>
+        <div class="system-status">
+            <span class="status-dot"></span>
+            SİSTEM ÇEVRİM İÇİ
+        </div>
+    </header>
+
+    <main class="app">
+        <section class="screen active" id="introScreen">
+            <div class="classified">
+                <span>ÇOK GİZLİ</span>
+                <span>DOSYA NO. 143</span>
+            </div>
+
+            <div class="hero-icon">🕵️‍♀️</div>
+
+            <p class="eyebrow">GİZLİ GÖREV</p>
+            <h1>Operation:<br><span class="gradient-text">Kalbini Çal</span></h1>
+
+            <p class="intro-text">
+                Çok gizli bir görev için seçildin.
+                Amaç: Seni hayal ettiğinden daha çok seven birinin gerçeklerini keşfetmek.
+            </p>
+
+            <button class="primary-btn" id="startBtn">
+                Göreve Başla <span>←</span>
+            </button>
+        </section>
+
+        <section class="screen" id="missionScreen">
+            <div class="mission-header">
+                <div>
+                    <p class="eyebrow">AKTİF OPERASYON</p>
+                    <h2 id="stageHeading">Birinci Aşama</h2>
+                </div>
+                <div class="level-badge" id="levelBadge">01 / 03</div>
+            </div>
+
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span>secure_connection.exe</span>
+                    <span>ŞİFRELİ</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-line"><span>&gt;</span> Aşk protokolü başlatılıyor...</p>
+                    <p class="terminal-line"><span>&gt;</span> Hedef belirlendi: <b>O ❤️</b></p>
+                    <p class="terminal-line"><span>&gt;</span> Ajanın yanıtı bekleniyor...</p>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon" id="challengeIcon"></div>
+                <p class="eyebrow" id="challengeLabel">GÜVENLİK KONTROLÜ 01</p>
+                <h3 id="questionTitle">Çok gizli bir soru</h3>
+                <p class="question-description" id="questionDescription"></p>
+
+                <div id="options" class="options"></div>
+
+                <p id="feedback" class="feedback" aria-live="polite"></p>
+
+                <button class="primary-btn hidden" id="nextBtn">
+                    Göreve Devam Et <span>←</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="screen" id="finalScreen">
+            <div class="classified">
+                <span>GÖREV TAMAMLANDI</span>
+                <span>DOSYA NO. 143</span>
+            </div>
+
+            <div class="success-icon">💌</div>
+            <p class="eyebrow">GİZLİ MESAJIN KİLİDİ AÇILDI</p>
+            <h1>Görev Başarıyla Tamamlandı!<br><span class="gradient-text">Ama Son Bir İtirafım Var...</span></h1>
+
+            <div class="love-letter">
+                <div class="letter-top">
+                </div>
+
+                <p>Hayatıma gelen en güzel tesadüfe...</p>
+
+                <p>
+                    Hayatımda olmanın benim için ne kadar değerli olduğunu
+                    bilmeni istiyorum. Sadece var olman bile kalbimi mutlu etmeye yetiyor.
+                </p>
+
+                <p>
+                    Belki her zaman duygularımı doğru şekilde ifade edemiyorum,
+                    ama gerçek çok basit: Seni seviyorum.
+                    Gülüşünü, konuşmanı ve seni sen yapan bütün o küçük detayları seviyorum.
+                </p>
+
+                <h2 class="final-love">SENİ SEVİYORUM ❤️</h2>
+                <p class="signature">— Dünyadaki en sevdiğin baş belası 😂💕</p>
+            </div>
+
+            <button class="primary-btn" id="replayBtn">
+                Görevi Baştan Başlat 🔄
+            </button>
+
+            <p id="extraMessage" class="extra-message hidden" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <span>❤️ VE BOLCA SAÇMALIKLA YAPILDI</span>
+        <span>© LOVEOS — GİZLİ</span>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
